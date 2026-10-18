@@ -1,0 +1,12 @@
+[Unit]
+Description = Ping gateway, restart networking if down
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+ExecStart=/usr/local/bin/netwatch.sh
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
