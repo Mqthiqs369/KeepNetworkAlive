@@ -14,7 +14,7 @@ This doesn't fix the card, it just notices when the network is gone and brings i
 
 ```bash
 git clone <this repo>
-cd netwatch
+cd KeepNetworkAlive
 chmod +x install.sh uninstall.sh
 sudo ./install.sh
 ```
